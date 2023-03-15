@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="576.0" style="-fx-background-color: #6E8793;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyect.entrega1.HelloController">
+    <children>
+        <TextField fx:id="nombreClase" alignment="TOP_CENTER" layoutX="124.0" layoutY="91.0" prefHeight="26.0" prefWidth="329.0" style="-fx-background-color: null;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+        <TableView fx:id="tabla" layoutX="14.0" layoutY="146.0" prefHeight="298.0" prefWidth="377.0" style="-fx-background-color: #B2C9EC;">
+            <columns>
+                <TableColumn fx:id="columnaId" prefWidth="61.0" text="ID" />
+                <TableColumn fx:id="columnaNombre" prefWidth="118.0" text="Nombre" />
+                <TableColumn fx:id="columnaNotas" prefWidth="197.0" text="Notas" />
+            </columns>
+        </TableView>
+      <Label layoutX="408.0" layoutY="198.0" text="id:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idcambiar" layoutX="435.0" layoutY="196.0" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #B2C9EC; -fx-background-radius: 5;" />
+      <Label layoutX="398.0" layoutY="251.0" text="Nota:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="notaCambiar" layoutX="444.0" layoutY="249.0" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #B2C9EC; -fx-background-radius: 5;" />
+      <Button fx:id="modificarBot" layoutX="441.0" layoutY="330.0" mnemonicParsing="false" onAction="#modificar" style="-fx-background-color: #4A5C77; -fx-background-radius: 30;" text="Modificar" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="crearBot" layoutX="456.0" layoutY="372.0" mnemonicParsing="false" onAction="#crear" style="-fx-background-color: #4A5C77; -fx-background-radius: 30;" text="Crear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="398.0" layoutY="295.0" text="Nota a modificar:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="indiceMod" layoutX="523.0" layoutY="293.0" prefHeight="25.0" prefWidth="37.0" style="-fx-background-color: #B2C9EC; -fx-background-radius: 5;" />
+      <Label layoutX="205.0" layoutY="25.0" text="Lista de estudiantes">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
