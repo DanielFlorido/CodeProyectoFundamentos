@@ -47,7 +47,7 @@ public class HelloController {
     }
 
     public ArrayList<Clase> archivo() {
-        String archivoCSV = "clasesNotas.csv";
+        String archivoCSV = "entrega1/ClasesNotas.csv";
         ArrayList<Clase> clases = new ArrayList();
 
         try {
